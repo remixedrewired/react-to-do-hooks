@@ -1,0 +1,114 @@
+
+@keyframes bgcolor {
+  0% {
+      background-color: #45a3e5
+  }
+
+  30% {
+      background-color: #66bf39
+  }
+
+  60% {
+      background-color: #eb670f
+  }
+
+  90% {
+      background-color: #f35
+  }
+
+  100% {
+      background-color: #864cbf
+  }
+}
+
+.app {
+  -webkit-animation: bgcolor 20s infinite;
+  animation: bgcolor 10s infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  padding: 30px;
+  height: 94vh;
+}
+
+.todo-list {
+  background: #e8e8e8;
+  border-radius: 5px;
+  padding: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.todo {
+  background: #fff;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  padding: 3px 10px;
+  font-size: 20px;
+  margin-bottom: 6px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form {
+  margin-bottom: 12px;
+}
+
+.input {
+  display: block;
+  width: 80%;
+  height: 35px;
+  font-size: 20px;
+  margin: 10px auto;
+  padding: 0px 5px;
+  border-radius: 5px;
+  border-style: none;
+}
+
+button {
+  margin: 5px;
+  padding: 5px;
+  background-color: #0066FF;
+  color: #FFF;
+  border: 2px solid #0066FF;
+  border-radius: 5px;
+  transition: background-color 0.5s, border-color 0.5s;
+}
+
+h3 {
+  text-align: center;
+}
+
+button:hover {
+  background-color: #ffcb2c;
+  border: 2px solid #ffcb2c;
+}
+
+button:last-child:hover {
+  background-color: #fd384f;
+  border: 2px solid #fd384f;
+}
+
+/* animation */
+
+.example-enter {
+  opacity: 0.01;
+  width: 0px;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  width: 100%;
+  transition: 700ms;
+}
+
+.example-leave {
+  opacity: 1;
+  width: 100%;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  width: 0%;
+  transition: 700ms;
+}
